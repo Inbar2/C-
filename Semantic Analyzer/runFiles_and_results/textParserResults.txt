@@ -1,0 +1,75 @@
+File name: textParser.txt
+Open file: 'textParser.txt' succeeded!
+
+Error in line 2: "There is a declaration before first 'main'".
+
+Error in line 3: "'}' without '{'".
+
+Error in line 3: "'}' without '{'".
+
+Error in line 3: "'}' without '{'".
+
+Error in line 3: "'}' without '{'".
+
+Error in line 3: "'}' without '{'".
+
+Error in line 8: "Multiple types consecutively: int and short".
+
+Error in line 8: "Variable 'ptr' is not declared, missing a type before".
+
+Error in line 11: "Multiple types consecutively: short and char".
+
+Error in line 11: "Variable 'day' is not declared, missing a type before".
+
+Error in line 12: "There is 'else' without 'if'".
+
+Error in line 14: "Variable 'go' is not declared, missing a type before".
+
+Error in line 15: "'}' without '{'".
+
+Error in line 15: "'}' without '{'".
+
+Error in line 16: "Illegal operator '+++'".
+
+Error in line 18: "Variable 'abc' has already been declared".
+
+Error in line 21: "Illegal operator '---'".
+
+Error in line 21: "']' without '['".
+
+Error in line 28: "'}' without '{'".
+
+Error in line 30: "Illegal operator '---'".
+
+Error in line 31: "']' without '['".
+
+Error in line 31: "Variable 'foo' is not declared, missing a type before".
+
+Error in line 34: "Variable 'virtual' is illegal (starts with a digit/is a keyword name)".
+
+Error in line 35: "Variable 'hello' is not declared, missing a type before".
+
+Error in line 36: "Variable 'private' is illegal (starts with a digit/is a keyword name)".
+
+Error in line 36: "Variable 'var' is not declared, missing a type before".
+
+Error in line 38: "Variable '66' is illegal (starts with a digit/is a keyword name)".
+
+Error in line 41: "Variable '_55' is not declared, missing a type before".
+
+Error in line 43: "Illegal operator '+++'".
+
+Error in line 48: "Variable 'i' has already been declared".
+
+Error in line 50: "Variable 'b' is not declared, missing a type before".
+
+Error in line 50: "Variable 'bla' is not declared, missing a type before".
+
+Error in line 50: "Variable 'theEnd' is not declared, missing a type before".
+
+Brackets error: 1 '(' not close.
+Brackets error: 3 '[' not close.
+Brackets error: 1 '{' not close.
+
+**Reset parser for next file**
+--------------------------------------------------------------

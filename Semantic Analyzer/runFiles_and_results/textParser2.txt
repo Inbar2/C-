@@ -1,0 +1,51 @@
+
+{{{{{{{
+}}}}}}}}}}}}
+{
+}
+*
+int k
+int short ptr
+main
+short
+char day
+else const virtual
+[[
+( go ) ]
+}}
++++
+int abc
+float abc
+-
+-
+-]]
+int i;					
+if (i<10) {
+	i=0;
+} else {
+	i++;
+}
+}
+int kkk; int aaa=
+kkk --- aaa
+]foo()
+if
+virtual virtual const private
+double virtual
+hello int
+private var
+else else
+int 66
+double _66
+534d
+_55
+<<<<<< >>>>>>>
+++--++--+++++-
+[[([,
+{{{
+(
+})
+if(int i)
+else
+b	} bla 4 theEnd
+

@@ -1,0 +1,339 @@
+File name: textParser.txt
+Open file: 'textParser.txt' succeeded!
+
+--------------------------
+row: 1: 
+--------------------------
+row: 2: {{{{{{{
+{
+Error in line 2: "There is a declaration before first 'main'".
+
+{
+{
+{
+{
+{
+{
+--------------------------
+row: 3: }}}}}}}}}}}}
+}
+}
+}
+}
+}
+}
+}
+}
+Error in line 3: "'}' without '{'".
+
+}
+Error in line 3: "'}' without '{'".
+
+}
+Error in line 3: "'}' without '{'".
+
+}
+Error in line 3: "'}' without '{'".
+
+}
+Error in line 3: "'}' without '{'".
+
+--------------------------
+row: 4: {
+{
+--------------------------
+row: 5: }
+}
+--------------------------
+row: 6: *
+*
+--------------------------
+row: 7: int k
+int
+k
+--------------------------
+row: 8: int short ptr
+int
+short
+Error in line 8: "Multiple types consecutively: int and short".
+
+ptr
+Error in line 8: "Variable 'ptr' is not declared, missing a type before".
+
+--------------------------
+row: 9: main
+main
+--------------------------
+row: 10: short
+short
+--------------------------
+row: 11: char day
+char
+Error in line 11: "Multiple types consecutively: short and char".
+
+day
+Error in line 11: "Variable 'day' is not declared, missing a type before".
+
+--------------------------
+row: 12: else const virtual
+else
+Error in line 12: "There is 'else' without 'if'".
+
+const
+virtual
+--------------------------
+row: 13: [[
+[
+[
+--------------------------
+row: 14: ( go ) ]
+(
+go
+Error in line 14: "Variable 'go' is not declared, missing a type before".
+
+)
+]
+--------------------------
+row: 15: }}
+}
+Error in line 15: "'}' without '{'".
+
+}
+Error in line 15: "'}' without '{'".
+
+--------------------------
+row: 16: +++
++
++
++
+Error in line 16: "Illegal operator '+++'".
+
+--------------------------
+row: 17: int abc
+int
+abc
+--------------------------
+row: 18: float abc
+float
+abc
+Error in line 18: "Variable 'abc' has already been declared".
+
+--------------------------
+row: 19: -
+-
+--------------------------
+row: 20: -
+-
+--------------------------
+row: 21: -]]
+-
+Error in line 21: "Illegal operator '---'".
+
+]
+]
+Error in line 21: "']' without '['".
+
+--------------------------
+row: 22: int i;					
+int
+i
+;
+--------------------------
+row: 23: if (i<10) {
+if
+(
+i
+<
+10
+)
+{
+--------------------------
+row: 24: 	i=0;
+i
+=
+0
+;
+--------------------------
+row: 25: } else {
+}
+else
+{
+--------------------------
+row: 26: 	i++;
+i
++
++
+;
+--------------------------
+row: 27: }
+}
+--------------------------
+row: 28: }
+}
+Error in line 28: "'}' without '{'".
+
+--------------------------
+row: 29: int kkk; int aaa=
+int
+kkk
+;
+int
+aaa
+=
+--------------------------
+row: 30: kkk --- aaa
+kkk
+-
+-
+-
+Error in line 30: "Illegal operator '---'".
+
+aaa
+--------------------------
+row: 31: ]foo()
+]
+Error in line 31: "']' without '['".
+
+foo
+Error in line 31: "Variable 'foo' is not declared, missing a type before".
+
+(
+)
+--------------------------
+row: 32: if
+if
+--------------------------
+row: 33: virtual virtual const private
+virtual
+virtual
+const
+private
+--------------------------
+row: 34: double virtual
+double
+virtual
+Error in line 34: "Variable 'virtual' is illegal (starts with a digit/is a keyword name)".
+
+--------------------------
+row: 35: hello int
+hello
+Error in line 35: "Variable 'hello' is not declared, missing a type before".
+
+int
+--------------------------
+row: 36: private var
+private
+Error in line 36: "Variable 'private' is illegal (starts with a digit/is a keyword name)".
+
+var
+Error in line 36: "Variable 'var' is not declared, missing a type before".
+
+--------------------------
+row: 37: else else
+else
+else
+--------------------------
+row: 38: int 66
+int
+66
+Error in line 38: "Variable '66' is illegal (starts with a digit/is a keyword name)".
+
+--------------------------
+row: 39: double _66
+double
+_66
+--------------------------
+row: 40: 534d
+534d
+--------------------------
+row: 41: _55
+_55
+Error in line 41: "Variable '_55' is not declared, missing a type before".
+
+--------------------------
+row: 42: <<<<<< >>>>>>>
+<
+<
+<
+<
+<
+<
+>
+>
+>
+>
+>
+>
+>
+--------------------------
+row: 43: ++--++--+++++-
++
++
+-
+-
++
++
+-
+-
++
++
++
+Error in line 43: "Illegal operator '+++'".
+
++
++
+-
+--------------------------
+row: 44: [[([,
+[
+[
+(
+[
+,
+--------------------------
+row: 45: {{{
+{
+{
+{
+--------------------------
+row: 46: (
+(
+--------------------------
+row: 47: })
+}
+)
+--------------------------
+row: 48: if(int i)
+if
+(
+int
+i
+Error in line 48: "Variable 'i' has already been declared".
+
+)
+--------------------------
+row: 49: else
+else
+--------------------------
+row: 50: b	} bla 4 theEnd
+b
+Error in line 50: "Variable 'b' is not declared, missing a type before".
+
+}
+bla
+Error in line 50: "Variable 'bla' is not declared, missing a type before".
+
+4
+theEnd
+Error in line 50: "Variable 'theEnd' is not declared, missing a type before".
+
+--------------------------
+row: 51: 
+--------------------------
+row: 52: 
+Brackets error: 1 '(' not close.
+Brackets error: 3 '[' not close.
+Brackets error: 1 '{' not close.
+
+**Reset parser for next file**
+--------------------------------------------------------------

@@ -1,0 +1,7 @@
+parser_t.o: parser_t.cpp parser_t.h tokenizer_t.h analyzer_t.h
+
+tokenizer_t.o: tokenizer_t.cpp tokenizer_t.h
+
+analyzer_t.o: analyzer_t.cpp analyzer_t.h
+
+main.o: parser_t.h

@@ -1,0 +1,9 @@
+
+' '      space 
+'\t'     horizontal tab 
+'\n'     newline
+'\v'     vertical tab 
+'\f'     feed 
+'\r'     carriage return    
+
+Use isspace standard library function from ctype.h if you want to check for any of these white-spaces. 
