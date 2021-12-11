@@ -10,7 +10,7 @@
 using std::tr1::shared_ptr;
 using std::string;
 
-//~/work/advcpp/SmartBuild/test_and_data$ g++ -ansi -pedantic -Wall -Werror -std=c++03 -I../include -I../../include ini_test.cpp
+//g++ -ansi -pedantic -Wall -Werror -std=c++03 -I../include -I../../include ini_test.cpp
 
 //use source and change it:
 //https://www.experts-exchange.com/questions/27274326/How-to-read-INI-file-on-Linux-using-c.html
@@ -95,7 +95,6 @@ std::string value_for_key(const string& s, const string& k, bool* isKey)
 }
 
 
-//TODO test result try catch in prog code
 void getini(const string& path, std::vector<string>& m_recordsVec/*, std::vector<*/)
 {
     string keys[] = {"type", "room", "floor", "log", "config"};
@@ -167,6 +166,3 @@ int main()
 
 	return 0;
 }
-
-
-
