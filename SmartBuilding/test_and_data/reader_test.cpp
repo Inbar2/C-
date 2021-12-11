@@ -1,7 +1,7 @@
 #include "ConfigReader.h"
 using namespace advcpp;
 
-//~/work/advcpp/SmartBuild$ g++ -ansi -pedantic -Wall -Werror -std=c++03 -I./include -I../include ConfigReader.cpp AgentRecord.cpp ./test_and_data/reader_test.cpp 
+//g++ -ansi -pedantic -Wall -Werror -std=c++03 -I./include -I../include ConfigReader.cpp AgentRecord.cpp ./test_and_data/reader_test.cpp 
 
 int main()
 {
