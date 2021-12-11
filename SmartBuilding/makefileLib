@@ -1,0 +1,78 @@
+# makefile for parser exercise cpp
+
+LIB_PATH= ./agentsLibs
+TARGET_SMOKE_S= libSmoke_detector.so
+TARGET_SMOKE_C= libSprinkler.so #Name of a file(e.g. executable or object files).
+TARGET_TEMP_S= libAmbient_temp.so
+TARGET_TEMP_C= libHVAC.so
+TARGET_CARD_S= libIDentCard.so
+CC= g++
+INC_PATH= ./include
+INC_Q_PATH= ./include2
+CFLAGS= -g -ansi -pedantic -Wall -Werror -lpthread -std=c++03 -fPIC#Extra flags to give to the compiler.
+CPPFLAGS=$(addprefix -I,$(INC_PATH))
+CPPFLAGSB=$(addprefix -I,$(INC_Q_PATH))
+
+SRCS= SmokeSensor.cpp SmokeController.cpp SmokeHandler.cpp TempSensor.cpp TempController.cpp TempHandler.cpp CardSensor.cpp
+
+OBJS_SMOKE_S= SmokeSensor.o
+OBJS_SMOKE_C= SmokeController.o SmokeHandler.o
+
+OBJS_TEMP_S= TempSensor.o
+OBJS_TEMP_C= TempController.o TempHandler.o
+
+OBJS_CARD_S= CardSensor.o
+
+.PHONY: all clean run
+
+both: $(TARGET_SMOKE_S) $(TARGET_SMOKE_C) $(TARGET_TEMP_S) $(TARGET_TEMP_C) $(TARGET_CARD_S)
+$(TARGET_SMOKE_S): $(OBJS_SMOKE_S)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) -o $(LIB_PATH)/$(TARGET_SMOKE_S) -shared $^
+
+$(TARGET_SMOKE_C): $(OBJS_SMOKE_C)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) -o $(LIB_PATH)/$(TARGET_SMOKE_C) -shared $^
+
+$(TARGET_TEMP_S): $(OBJS_TEMP_S)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) -o $(LIB_PATH)/$(TARGET_TEMP_S) -shared $^
+
+$(TARGET_TEMP_C): $(OBJS_TEMP_C)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) -o $(LIB_PATH)/$(TARGET_TEMP_C) -shared $^
+
+$(TARGET_CARD_S): $(OBJS_CARD_S)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) -o $(LIB_PATH)/$(TARGET_CARD_S) -shared $^
+
+
+
+SmokeHandler.o: SmokeHandler.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+EventCriteria.o: EventCriteria.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+SmokeController.o: SmokeController.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+	
+SmokeSensor.o: SmokeSensor.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+
+
+TempHandler.o: TempHandler.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+TempController.o: TempController.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+	
+TempSensor.o: TempSensor.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+
+CardSensor.o: CardSensor.cpp
+	$(CC) -c $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $<
+
+
+		
+include $(LIB_PATH)/depends
+$(LIB_PATH)/depends:$(SRCS)
+	$(CC) -MM $(CFLAGS) $(CPPFLAGS) $(CPPFLAGSB) $^ > $(LIB_PATH)/depends
+	
+clean:
+	rm -f $(LIB_PATH)/$(TARGET_SMOKE_S) $(LIB_PATH)/$(TARGET_SMOKE_C) $(OBJS_SMOKE_S) $(OBJS_SMOKE_C) $(LIB_PATH)/$(TARGET_TEMP_S) $(LIB_PATH)/$(TARGET_TEMP_C) $(OBJS_TEMP_S) $(OBJS_TEMP_C) $(LIB_PATH)/$(TARGET_CARD_S) $(LIB_PATH)/depends #Command to remove a file.
+
+#run makefileLib: make -f makefileLib
+
